@@ -3,7 +3,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, FindOneOptions } from 'typeorm';
 import { Cliente } from './entities/cliente.entity';
 
-
 @Injectable()
 export class ClienteService {
   constructor(
@@ -16,7 +15,7 @@ export class ClienteService {
   }
 
   findOne(id: number): Promise<Cliente> {
-    const options: FindOneOptions<Cliente> = { where: { id } };
+    const options: FindOneOptions<Cliente> = { where: { id } }; // Corrigido para usar FindOneOptions
     return this.clienteRepository.findOne(options);
   }
 }

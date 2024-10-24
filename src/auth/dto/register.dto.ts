@@ -1,7 +1,6 @@
 export class RegisterDto {
-    nomeCompleto: string;
-    cpf: string;
-    email: string;
-    password: string;
-  }
-  
+  nomeCompleto: string;
+  cpf: string;
+  email: string;
+  password: string;
+}

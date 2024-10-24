@@ -1,56 +1,67 @@
-# compiled output
-/dist
-/node_modules
-/build
-
+.env
 # Logs
 logs
 *.log
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 
-# OS
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# dotenv environment variables file
+.env
+
+# Nest CLI specific files
+.nest-cli.json
+nest-cli.json
+
+# Directory for static files
+public/
+
+# Coverage directory used by testing tools
+coverage/
+
+# Ignore Editor directories and files
+.vscode/
+.idea/
 .DS_Store
 
-# Tests
-/coverage
-/.nyc_output
+# Ignore miscellaneous binaries
+*.exe
+*.dll
+*.so
+*.dylib
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Ignore temporary files
+*.swp
+*.swo
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Ignore local history
+.history
 
-# dotenv environment variable files
-.env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+# Ignore npm package lock file
+package-lock.json
+yarn.lock
 
-# temp directory
-.temp
-.tmp
+# Ignore backup files
+*~
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Ignore test reports
+test-results/
 
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+# Ignore environment-specific files
+.env.test
+.env.production
+.env.development
+
+# Ignore IntelliJ IDE specific files
+/.idea/
+*.iml
+
+# Ignore MacOS specific files
+*.DS_Store
